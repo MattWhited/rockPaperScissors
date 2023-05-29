@@ -7,3 +7,4 @@
 // the computer will then need to spit out its own random choice. 
 
 // establish a winner and let them know who it is. 
+console.log('whats good my guy');
