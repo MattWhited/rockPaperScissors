@@ -15,7 +15,7 @@ console.log('whats good my guy');
 
 function getComputerChoice (computerChoice) {
 
-const randomNumber = Math.floor(Math.random() * 3) + 1
+    const randomNumber = Math.floor(Math.random() * 3) + 1
 if (randomNumber === 1) {
     computerChoice = 'rock'
 }
@@ -26,3 +26,6 @@ if (randomNumber === 3) {
     computerChoice = 'paper'
 }
 }
+
+
+let sign = prompt("rock paper or scissors?")
