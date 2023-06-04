@@ -30,3 +30,12 @@ if (randomNumber === 3) {
 
 let sign = prompt("rock paper or scissors?");
 alert (sign)
+
+const playerText = document.querySelector("#player");
+const computerText = document.querySelector("#computer");
+const resultText = document.querySelector("#result");
+const choiceBtns = document.querySelectorAll(".choice");
+
+let player;
+let computer;
+let result; 
