@@ -28,4 +28,5 @@ if (randomNumber === 3) {
 }
 
 
-let sign = prompt("rock paper or scissors?")
+let sign = prompt("rock paper or scissors?");
+alert (sign)
