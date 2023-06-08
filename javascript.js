@@ -31,9 +31,9 @@ console.log('whats good my guy');
 //let sign = prompt("rock paper or scissors?");
 //alert (sign)
 
-const playerText = document.querySelector("#player");
-const computerText = document.querySelector("#computer");
-const resultText = document.querySelector("#result");
+const playerText = document.querySelector("#playerText");
+const computerText = document.querySelector("#computerText");
+const resultText = document.querySelector("#resultText");
 const choiceBtns = document.querySelectorAll(".choice");
 
 let player;
@@ -44,6 +44,10 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
 
     player = button.textContent;
     getComputerChoice();
+    playerText.textContent = `Player: ${player}`;
+    computerText.textContent = `Computer: ${computer}`;
+    resultText.textContent = checkWinner();
+
 }));
 
 function getComputerChoice(){
@@ -59,5 +63,20 @@ function getComputerChoice(){
         case 3:
             computer = "Scissors";
             break;
+    }
+}
+
+function checkWinner(){
+    if(player == computer){
+        return "Draw!";
+    }
+    else if(computer == "Rock"){
+        return (player == "Paper") ? "You Win!" : "You Lose..."
+    }
+    else if(computer == "Paper"){
+        return (player == "Scissors") ? "You Win!" : "You Lose..."
+    }
+    else if(computer == "Scissors"){
+        return (player == "Rock") ? "You Win!" : "You Lose..."
     }
 }
