@@ -13,23 +13,23 @@ console.log('whats good my guy');
 // computer makes a RANDOM selection (either rock, paper, or scissors)
 // then play the game and give results... 
 
-function getComputerChoice (computerChoice) {
+//function getComputerChoice (computerChoice) {
+//
+//    const randomNumber = Math.floor(Math.random() * 3) + 1
+//if (randomNumber === 1) {
+//    computerChoice = 'rock'
+//}
+//if (randomNumber === 2) {
+//    computerChoice = 'scissors'
+//}
+//if (randomNumber === 3) {
+//    computerChoice = 'paper'
+//}
+//}
 
-    const randomNumber = Math.floor(Math.random() * 3) + 1
-if (randomNumber === 1) {
-    computerChoice = 'rock'
-}
-if (randomNumber === 2) {
-    computerChoice = 'scissors'
-}
-if (randomNumber === 3) {
-    computerChoice = 'paper'
-}
-}
 
-
-let sign = prompt("rock paper or scissors?");
-alert (sign)
+//let sign = prompt("rock paper or scissors?");
+//alert (sign)
 
 const playerText = document.querySelector("#player");
 const computerText = document.querySelector("#computer");
@@ -39,3 +39,25 @@ const choiceBtns = document.querySelectorAll(".choice");
 let player;
 let computer;
 let result; 
+
+choiceBtns.forEach(button => button.addEventListener("click", () => {
+
+    player = button.textContent;
+    getComputerChoice();
+}));
+
+function getComputerChoice(){
+    const randNum = Math.floor(Math.random() * 3) + 1;
+
+    switch(randNum){
+        case 1:
+            computer = "Rock";
+            break;
+        case 2:
+            computer = "Paper";
+            break;
+        case 3:
+            computer = "Scissors";
+            break;
+    }
+}
