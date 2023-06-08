@@ -9,27 +9,7 @@
 // establish a winner and let them know who it is. 
 console.log('whats good my guy');
 
-// player makes selection (either rock, paper, or scissors)
-// computer makes a RANDOM selection (either rock, paper, or scissors)
-// then play the game and give results... 
 
-//function getComputerChoice (computerChoice) {
-//
-//    const randomNumber = Math.floor(Math.random() * 3) + 1
-//if (randomNumber === 1) {
-//    computerChoice = 'rock'
-//}
-//if (randomNumber === 2) {
-//    computerChoice = 'scissors'
-//}
-//if (randomNumber === 3) {
-//    computerChoice = 'paper'
-//}
-//}
-
-
-//let sign = prompt("rock paper or scissors?");
-//alert (sign)
 
 const playerText = document.querySelector("#playerText");
 const computerText = document.querySelector("#computerText");
