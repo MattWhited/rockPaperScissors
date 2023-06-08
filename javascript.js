@@ -60,3 +60,13 @@ function checkWinner(){
         return (player == "Rock") ? "You Win!" : "You Lose..."
     }
 }
+
+// Best of Five
+
+// Now I need to play a game where I somehow store the results of the 
+// last 5 rounds and declare a winner for the best 3 out of 5. 
+
+// I will need-
+// - a best of 5 button
+// - a list that can change to store the best of 5 game results.
+// - the code to run the game lol...
