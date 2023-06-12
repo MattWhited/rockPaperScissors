@@ -70,3 +70,15 @@ function checkWinner(){
 // - a best of 5 button
 // - a list that can change to store the best of 5 game results.
 // - the code to run the game lol...
+
+const roundOne = document.querySelector("#roundOne");
+const roundTwo = document.querySelector("#roundTwo");
+const roundThree = document.querySelector("#roundThree");
+const roundFour = document.querySelector("#roundFour");
+const roundFive = document.querySelector("#roundFive");
+
+roundOne.textContent = `1. ${checkWinner()}`;
+roundTwo.textContent = `2. `;
+roundThree.textContent = `3. butt`;
+roundFour.textContent = `4. `;
+roundFive.textContent = `5. `;
