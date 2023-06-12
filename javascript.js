@@ -82,3 +82,8 @@ roundTwo.textContent = `2. `;
 roundThree.textContent = `3. butt`;
 roundFour.textContent = `4. `;
 roundFive.textContent = `5. `;
+
+startBtn.forEach(button => button.addEventListener("click", () => {
+
+    
+}));
