@@ -85,5 +85,15 @@ roundFive.textContent = `5. `;
 
 startBtn.forEach(button => button.addEventListener("click", () => {
 
-    
+
 }));
+
+// the start/ restart button needs to
+// - clear the previous results
+// - start recording new results in the round 1-5 positions
+// - take those 5 values and declare a winner after all 5 rounds have been completed
+
+
+// i also need a function that will take the original 
+// results tab and put that value into the round 1-5 
+// places. 
