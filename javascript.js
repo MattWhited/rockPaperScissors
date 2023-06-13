@@ -97,3 +97,22 @@ startBtn.forEach(button => button.addEventListener("click", () => {
 // i also need a function that will take the original 
 // results tab and put that value into the round 1-5 
 // places. 
+
+// 1) get result from game 
+// 2) if one is empty place result there
+// if one is full place result in two
+// so on and so forth. 
+
+function storeRound(){
+    if (roundOne.textContent.trim() === "") {
+        return checkWinner
+    }
+    
+
+}
+
+// I am realizing how messy this code is, and how off track I have gotten.
+// I think I need to STOP, GO BACK, RE-DO the javascript lessons. 
+
+// I will probably abandon this set of code completely 
+// and start new with fresh eyes. 
